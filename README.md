@@ -28,9 +28,9 @@ A modern, responsive **Weather Application** built with **React** and **Material
 ## 📦 Installation
 
 ### 1️⃣ Clone the repository
-bash
-git clone <your-repo-url>
-cd weather-app
+- bash
+- git clone <your-repo-url>
+- cd weather-app
 
 ### 2️⃣ Install dependencies
 bash
