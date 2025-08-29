@@ -31,18 +31,18 @@ A modern, responsive **Weather Application** built with **React** and **Material
 bash
 git clone <your-repo-url>
 cd weather-app
----
+
 ### 2️⃣ Install dependencies
 bash
 npm install
----
-###3️⃣ Get your API key from OpenWeatherMap
-###4️⃣ Replace the API key in SearchBox.js
----
+
+### 3️⃣ Get your API key from OpenWeatherMap
+### 4️⃣ Replace the API key in SearchBox.js
+
 javascript
 const API_KEY = "your-api-key-here";
----
-###5️⃣ Start the development server
+
+### 5️⃣ Start the development server
 bash
 npm start
 ---
