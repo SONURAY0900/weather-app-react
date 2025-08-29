@@ -36,17 +36,17 @@ cd weather-app
 bash
 npm install
 ---
-3️⃣ Get your API key from OpenWeatherMap
-4️⃣ Replace the API key in SearchBox.js
+###3️⃣ Get your API key from OpenWeatherMap
+###4️⃣ Replace the API key in SearchBox.js
 ---
 javascript
 const API_KEY = "your-api-key-here";
 ---
-5️⃣ Start the development server
+###5️⃣ Start the development server
 bash
 npm start
 ---
-🚀 Usage
+## 🚀 Usage
 Enter a city name in the search field
 Click the Search button or press Enter
 View real-time weather info including:
@@ -56,7 +56,7 @@ View real-time weather info including:
 🌍 Weather Condition
 🎭 Dynamic Visual Indicators
 ---
-🎨 Component Structure
+## 🎨 Component Structure
 bash
 src/
 ├── WeatherApp.js       # Main application component
@@ -65,26 +65,26 @@ src/
 └── InfoBox.css         # Styling for InfoBox
 
 ---
-🔧 API Integration
+## 🔧 API Integration
 This app uses OpenWeatherMap API to fetch weather data.
 Endpoint:
 bash:-https://api.openweathermap.org/data/2.5/weather
 Parameters: City name, API key, units (metric)
 Response: JSON (temp, humidity, condition, etc.)
 ---
-🌈 Weather Visuals
+## 🌈 Weather Visuals
 Dynamic visuals based on conditions:
 ☀️ Hot Weather (>15°C): Sun icon + orange theme
 ❄️ Cold Weather (≤15°C): Snowflake icon + blue theme
 ☔ Rainy Weather (Humidity >80%): Umbrella icon + light blue theme
 ---
-📱 Responsive Design
+## 📱 Responsive Design
 The app adapts to different screen sizes using:
 CSS Flexbox for layout
 MUI Responsive Components
 Mobile-friendly touch targets
 ---
-🤝 Contributing
+## 🤝 Contributing
 1.Fork the project
 2.Create a new branch
     bash:-git checkout -b feature/AmazingFeature
@@ -94,14 +94,14 @@ Mobile-friendly touch targets
    bash:-git push origin feature/AmazingFeature
 5.Open a Pull Request
 ---
-📄 License
+## 📄 License
 This project is licensed under the MIT License – see the LICENSE file for details.
 ---
 🙏 Acknowledgments
 🌍 Weather data: OpenWeatherMap
 🎨 UI Components & Icons: Material-UI
 ---
-📞 Support
+##📞 Support
 If you have any questions or issues, please open an issue on the GitHub repository.
 ---
 Do you want me to also **add cool GitHub badges** (like Stars ⭐, Forks 🍴, Issues 🚩, License 📜
