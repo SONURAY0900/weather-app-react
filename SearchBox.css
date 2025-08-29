@@ -1,0 +1,157 @@
+/* SearchBox.css - Enhanced Search Interface */
+
+.search {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 25px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced Form Styling */
+.search form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* TextField Enhancements */
+.search .MuiTextField-root {
+  width: 100%;
+  max-width: 350px;
+}
+
+.search .MuiOutlinedInput-root {
+  border-radius: 25px !important;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.search .MuiOutlinedInput-root:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.search .MuiOutlinedInput-root.Mui-focused {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+}
+
+.search .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 123, 255, 0.3) !important;
+  border-width: 2px !important;
+}
+
+.search .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 123, 255, 0.5) !important;
+}
+
+.search .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #007bff !important;
+  border-width: 2px !important;
+}
+
+/* Enhanced Button Styling */
+.search .MuiButton-root {
+  border-radius: 25px !important;
+  padding: 12px 40px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4) !important;
+  transition: all 0.3s ease !important;
+  min-width: 120px;
+}
+
+.search .MuiButton-root:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #667eea 100%) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6) !important;
+}
+
+.search .MuiButton-root:active {
+  transform: translateY(-1px);
+}
+
+/* Error Message Styling */
+.search p[style*="color:red"] {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Shake animation for error */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* Loading Animation */
+.search .loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Label Enhancement */
+.search .MuiInputLabel-root {
+  font-weight: 500 !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.search .MuiInputLabel-root.Mui-focused {
+  color: #007bff !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search {
+    margin: 0 15px 25px 15px;
+    padding: 20px 15px;
+  }
+  
+  .search .MuiTextField-root {
+    max-width: 100%;
+  }
+  
+  .search .MuiButton-root {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search {
+    margin: 0 10px 20px 10px;
+    padding: 15px 10px;
+  }
+  
+  .search form {
+    gap: 15px;
+  }
+}

@@ -1,0 +1,109 @@
+/* InfoBox.css - Enhanced Weather Card Styling */
+
+.InfoBox {
+  text-align: center;
+  padding: 20px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CardContainer {
+  display: flex;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+/* Enhanced Card Animations */
+.CardContainer .MuiCard-root {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.CardContainer .MuiCard-root:hover {
+  transform: translateY(-8px) rotateX(5deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Gradient Overlay for Card Media */
+.CardContainer .MuiCardMedia-root {
+  position: relative;
+}
+
+.CardContainer .MuiCardMedia-root::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  pointer-events: none;
+}
+
+/* Enhanced Card Content */
+.CardContainer .MuiCardContent-root {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+/* Weather Stats Styling */
+.CardContainer .MuiTypography-body2 p {
+  margin: 8px 0;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.CardContainer .MuiTypography-body2 p:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+/* City Name Styling */
+.CardContainer .MuiTypography-h5 {
+  font-weight: 600 !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .InfoBox {
+    padding: 10px;
+  }
+  
+  .CardContainer .MuiCard-root {
+    max-width: 320px !important;
+    margin: 0 10px;
+  }
+  
+  .CardContainer .MuiCard-root:hover {
+    transform: translateY(-4px);
+  }
+}
+
+@media (max-width: 480px) {
+  .CardContainer .MuiCard-root {
+    max-width: 280px !important;
+  }
+  
+  .CardContainer .MuiCardMedia-root {
+    height: 120px !important;
+  }
+}
