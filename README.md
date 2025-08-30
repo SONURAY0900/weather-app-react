@@ -123,4 +123,4 @@ bash:-https://api.openweathermap.org/data/2.5/weather
 
 ---
 
-- Do you want me to also **add cool GitHub badges** (like Stars ⭐, Forks 🍴, Issues 🚩, License 📜
+
